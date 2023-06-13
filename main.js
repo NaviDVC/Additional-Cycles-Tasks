@@ -46,7 +46,7 @@ document.write('<pre>-----------------------------------------------------------
 
 document.write(`<pre>4. Дано ціле число. З'ясувати, чи є воно простим (простим називається число, більше ніж 1, які не мають інших дільників крім 1 і себе).</pre>`)
 
-let primeNumber = prompt('Enter some number: ');
+let primeNumber = prompt('Enter some number to find out if it is prime: ');
 let isPrime = true;
 
 for (let i = 2; i < primeNumber; i++) {
@@ -60,4 +60,23 @@ if (isPrime) {
   document.write(`<p>${primeNumber} is prime!</p>`);
 } else {
   document.write(`<p>${primeNumber} is not prime!</p>`);
+}
+document.write('<pre>----------------------------------------------------------------------------------------------------</pre>')
+
+// 5. Дано число. Визначити, чи можна одержати це число шляхом зведення числа 3 в деякий ступінь. (Наприклад, числа 9, 81 можна отримати, а 13 - не можна)
+
+document.write(`<pre>5. Дано число. Визначити, чи можна одержати це число шляхом зведення числа 3 в деякий ступінь. (Наприклад, числа 9, 81 можна отримати, а 13 - не можна)</pre>`)
+
+let userNumber = Number(prompt('Enter some number to find out if is it possible to get this number by reducing the number 3 to a certain power: '));
+let result = 1;
+
+for (let i = 0; i <= userNumber; i++) {
+    if (result === userNumber) {
+        document.write(`<p>You can get ${userNumber} by raisind the number 3 to the power ${i}</p>`);
+        break;
+    } else if (result > userNumber) {
+        document.write(`<p>You can't get ${userNumber} by raising the number 3 to any power</p>`);
+        break;
+    }
+    result *= 3;
 }
