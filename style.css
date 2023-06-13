@@ -4,6 +4,7 @@ pre {
 
 p {
     text-align: center;
-    color: greenyellow;
+    color: rgb(32, 119, 218);
     font-size: 22px;
+    margin: 10px 0;
 }
