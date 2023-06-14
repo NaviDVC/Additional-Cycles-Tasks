@@ -21,7 +21,7 @@ let hryvnia = 0;
 
 for (let i = 10; i <= 100; i += 10) {
     hryvnia = i * 40;
-    document.write(`<p>$${i} = ₴${hryvnia}</p>`);
+    document.write(`<p>$${i} × 40 = ₴${hryvnia}</p>`);
 }
 
 document.write('<pre>----------------------------------------------------------------------------------------------------</pre>')
